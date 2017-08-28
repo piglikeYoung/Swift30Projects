@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yhk-9U-1HU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="dqj-dE-pHO">
+            <objects>
+                <viewController id="yhk-9U-1HU" customClass="MasterViewController" customModule="SpotifySignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bjO-qs-JgB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fxf-Lo-kMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TOW-Is-Nf4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="yvN-zY-doF">
+                                <rect key="frame" x="78" y="71" width="218" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="gzt-5m-crR"/>
+                                    <constraint firstAttribute="width" constant="218" id="zxk-km-SgU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nq-pi-07B">
+                                <rect key="frame" x="187" y="622" width="187.5" height="45"/>
+                                <color key="backgroundColor" red="0.089431285860000001" green="0.68066966529999995" blue="0.01182749867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0to-Jy-cF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="0.99969649309999997" green="0.99999141690000004" blue="0.99967747929999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-CT-5AJ">
+                                <rect key="frame" x="0.0" y="622" width="187.5" height="45"/>
+                                <color key="backgroundColor" red="0.26977372170000002" green="0.26977372170000002" blue="0.26977372170000002" alpha="0.80385638299999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HqP-7U-qH8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="ldb-9Q-6aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.99969649309999997" green="0.99999141690000004" blue="0.99967747929999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ldb-9Q-6aw"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vhR-CT-5AJ" firstAttribute="width" secondItem="5nq-pi-07B" secondAttribute="width" id="Dcj-zJ-lKK"/>
+                            <constraint firstItem="5nq-pi-07B" firstAttribute="leading" secondItem="vhR-CT-5AJ" secondAttribute="trailing" id="Khv-lw-bG3"/>
+                            <constraint firstItem="yvN-zY-doF" firstAttribute="centerX" secondItem="TOW-Is-Nf4" secondAttribute="centerX" id="LRf-kv-ELS"/>
+                            <constraint firstItem="Fxf-Lo-kMr" firstAttribute="top" secondItem="vhR-CT-5AJ" secondAttribute="bottom" id="Qlw-Xm-BLY"/>
+                            <constraint firstItem="yvN-zY-doF" firstAttribute="top" secondItem="bjO-qs-JgB" secondAttribute="bottom" constant="51" id="aYa-gu-QAV"/>
+                            <constraint firstItem="vhR-CT-5AJ" firstAttribute="leading" secondItem="TOW-Is-Nf4" secondAttribute="leading" id="lxg-lN-T73"/>
+                            <constraint firstAttribute="trailing" secondItem="5nq-pi-07B" secondAttribute="trailing" id="uJR-ke-ore"/>
+                            <constraint firstItem="Fxf-Lo-kMr" firstAttribute="top" secondItem="5nq-pi-07B" secondAttribute="bottom" id="xHR-Ba-kCg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HF7-Jv-dHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.5" y="357.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
