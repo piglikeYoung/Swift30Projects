@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vdC-0x-bL1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uBc-FI-daQ">
+            <objects>
+                <viewController id="vdC-0x-bL1" customClass="ViewController" customModule="HonoluluArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y7F-ih-BZd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fpd-lP-zUB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykH-gU-Dqk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="idK-Q4-dGS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="idK-Q4-dGS" firstAttribute="bottom" secondItem="fpd-lP-zUB" secondAttribute="top" id="CIQ-8V-bQj"/>
+                            <constraint firstItem="idK-Q4-dGS" firstAttribute="leading" secondItem="ykH-gU-Dqk" secondAttribute="leading" id="gBF-af-CHW"/>
+                            <constraint firstItem="idK-Q4-dGS" firstAttribute="top" secondItem="ykH-gU-Dqk" secondAttribute="top" id="huZ-jn-XdK"/>
+                            <constraint firstAttribute="trailing" secondItem="idK-Q4-dGS" secondAttribute="trailing" id="j95-sZ-AG8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="idK-Q4-dGS" id="vsn-zg-GZl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woS-Et-kV2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="-81"/>
+        </scene>
+    </scenes>
+</document>
